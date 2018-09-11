@@ -13,10 +13,16 @@ end
 
 
 def get_contestant_name(data, occupation)
+  name = ""
   
   data.each do |season, info|
     info.each do |info, value|
-      if
+      if info["occupation"] == occupation
+        name = info["name"]
+      end
+    end
+  end
+  name
   
   
 end
