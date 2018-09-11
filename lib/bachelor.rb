@@ -47,7 +47,8 @@ end
 
 
 def get_occupation(data, hometown)
-  # code here
+
+
 end
 
 
