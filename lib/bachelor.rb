@@ -51,8 +51,12 @@ def get_occupation(data, hometown)
 first = ""
  data.each do |season, info|
     info.find do |info, value|
-      if info["occupation"] == occupation
-        name = info["name"]
+      if info["hometown"] == hometown
+        first = info["occupation"]
+      end
+    end
+  end
+  first
 end
 
 
