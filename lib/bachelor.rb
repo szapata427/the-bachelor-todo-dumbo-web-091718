@@ -63,5 +63,13 @@ end
 
 
 def get_average_age_for_season(data, season)
+  avg = ""
+  array = []  
+  
+  data["season"].each do |info, value|
+    array << info["age"]
+  end
+  
+  array
 
 end
