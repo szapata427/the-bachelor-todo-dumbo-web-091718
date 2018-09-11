@@ -67,7 +67,7 @@ def get_average_age_for_season(data, season)
   array = []  
   
   data["season"].each do |info, value|
-    array << info["age"]
+    array << info["age"].to_f
   end
   
 sum = array.inject(0) { |sum, num| sum + num }
