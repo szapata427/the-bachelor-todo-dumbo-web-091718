@@ -3,7 +3,7 @@ def get_first_name_of_season_winner(data, season)
 data.each do |seasonnum, info|
   if seasonnum == season 
     info[:name].each do |info, value|
-      
+      first = in
       
   
 end
