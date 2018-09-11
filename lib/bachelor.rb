@@ -70,6 +70,9 @@ def get_average_age_for_season(data, season)
     array << info["age"]
   end
   
-  array
+  sum = array.inject(0) each do |sum, num| sum + num
+end
+avg = sum / array.size
+avg = avg.round
 
 end
